@@ -10,7 +10,8 @@ module.exports = {
     colors: {
       transparent: "transparent",
       background: "#323742",
-      text: "#e3e3e3",
+      textPrimary: "#e3e3e3",
+      textSecondary: "#d2d2d2",
       green: "#36e2d4",
     },
     fontFamily: {
