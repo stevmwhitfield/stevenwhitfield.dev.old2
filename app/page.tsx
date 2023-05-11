@@ -1,5 +1,3 @@
-import Hello from "../components/Hello";
-
 export default () => {
-  return <Hello />;
+  return <h1>Home</h1>;
 };

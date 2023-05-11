@@ -7,6 +7,23 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      transparent: "transparent",
+      background: "#323742",
+      text: "#e3e3e3",
+      green: "#36e2d4",
+    },
+    fontFamily: {
+      sans: ["Open Sans", "Roboto", "sans-serif"],
+      serif: ["Bitter", "serif"],
+      mono: ["Source Code Pro", "monospace"],
+    },
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1440px",
+    },
   },
   plugins: [],
 };
