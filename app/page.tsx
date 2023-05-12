@@ -1,25 +1,43 @@
 import Image from "next/image";
+import Link from "next/link";
 
+// Home Page
 export default () => {
   return (
-    <div className="w-full min-h-screen max-h-full flex flex-col px-5 pt-32">
+    <div className="w-4/5 min-h-screen max-h-full flex flex-col items-center lg:flex-row lg:justify-center lg:space-x-16">
+      {/* Photo of myself - replace with more professional photo once available */}
       <Image
-        src="/StevenWhitfield.jpg"
-        alt=""
-        width="250"
-        height="250"
-        className="rounded-full self-center mb-7"
+        src={"/StevenWhitfield.jpg"}
+        alt={"A photo of Steven Whitfield"}
+        width={"250"}
+        height={"250"}
+        priority={true}
+        className="rounded-full self-center my-16 sm:my-24 md:my-32"
       />
-      <h1 className="font-bold text-4xl pt-[1em]">Steven Whitfield</h1>
-      <h2 className="text-textSecondary text-xl pt-[0.25em]">
-        Software Engineer
-      </h2>
-      <p className="pt-8">
-        Hello, my name is Steven. I'm a software engineer with focused on{" "}
-        <span className="text-green">fullstack development</span>. I graduated
-        from Florida Polytechnic University with a B.S. in Computer Science and
-        now, I'm ready to work with you to build something awesome.
-      </p>
+      {/* Text-heavy section */}
+      <section className="w-full max-w-[31rem]">
+        <header className="mb-8">
+          <h1 className="font-bold text-3xl sm:text-4xl">Steven Whitfield</h1>
+          <h2 className="text-textSecondary text-xl pt-[0.25em]">
+            Software Engineer
+          </h2>
+        </header>
+        <article>
+          <p className="mb-8">
+            Hi, my name is Steven. I am a software engineer currently focused on{" "}
+            <span className="text-green">fullstack development</span>. I
+            graduated from Florida Polytechnic University with a B.S. in
+            Computer Science and now, I'm ready to work with you to build
+            something awesome!
+          </p>
+          <Link
+            href={"/projects"}
+            className="text-blue underline hover:text-blueDarker active:text-blueDarkest"
+          >
+            Explore my projects
+          </Link>
+        </article>
+      </section>
     </div>
   );
 };

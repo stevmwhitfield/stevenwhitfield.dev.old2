@@ -9,6 +9,18 @@
   --color-text-primary: #e3e3e3;
   --color-text-secondary: #d2d2d2;
   --color-green: #36e2d4;
+  --color-blue: #89acf6;
+  --color-blue-darker: #6d89c4;
+  --color-blue-darkest: #526793;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.5;
 }
 
 html,
@@ -16,7 +28,6 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  line-height: 1.5;
 }
 
 a {
@@ -24,8 +35,8 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+p {
+  font-size: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {

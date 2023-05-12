@@ -13,6 +13,9 @@ module.exports = {
       textPrimary: "#e3e3e3",
       textSecondary: "#d2d2d2",
       green: "#36e2d4",
+      blue: "#89acf6",
+      blueDarker: "#6d89c4",
+      blueDarkest: "#526793",
     },
     fontFamily: {
       sans: ["Open Sans", "Roboto", "sans-serif"],
