@@ -39,6 +39,14 @@ p {
   font-size: 1rem;
 }
 
+.disabled {
+  display: none;
+}
+
+#main {
+  /* height: calc(100vh - 56px); */
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

@@ -4,7 +4,7 @@ import Link from "next/link";
 // Home Page
 export default () => {
   return (
-    <div className="w-4/5 min-h-screen max-h-full flex flex-col items-center lg:flex-row lg:justify-center lg:space-x-16">
+    <div className="w-4/5 h-full flex flex-col items-center lg:flex-row lg:justify-center lg:space-x-16">
       {/* Photo of myself - replace with more professional photo once available */}
       <Image
         src={"/StevenWhitfield.jpg"}
@@ -12,7 +12,7 @@ export default () => {
         width={"250"}
         height={"250"}
         priority={true}
-        className="rounded-full self-center my-16 sm:my-24 md:my-32"
+        className="rounded-full self-center mb-12 sm:my-24 md:my-32"
       />
       {/* Text-heavy section */}
       <section className="w-full max-w-[31rem]">
@@ -23,18 +23,18 @@ export default () => {
           </h2>
         </header>
         <article>
-          <p className="mb-8">
-            Hi, my name is Steven. I am a software engineer currently focused on{" "}
-            <span className="text-green">fullstack development</span>. I
-            graduated from Florida Polytechnic University with a B.S. in
-            Computer Science and now, I'm ready to work with you to build
-            something awesome!
+          <p className="mb-4">
+            Hi, my name is Steven. I graduated from Florida Polytechnic
+            University in 2023 with a B.S. in Computer Science with a
+            concentration in game development. That said, my current focus is in{" "}
+            <span className="text-green">full stack development</span>. I'd love
+            to work with you to gain experience and build something awesome!
           </p>
           <Link
             href={"/projects"}
             className="text-blue underline hover:text-blueDarker active:text-blueDarkest"
           >
-            Explore my projects
+            See my projects
           </Link>
         </article>
       </section>
