@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default () => {
+const FooterSocials = () => {
   return (
     <div className="flex space-x-24 justify-center pt-4">
       <Link href={"https://github.com/stevmwhitfield"} target={"_blank"}>
@@ -16,3 +16,5 @@ export default () => {
     </div>
   );
 };
+
+export default FooterSocials;

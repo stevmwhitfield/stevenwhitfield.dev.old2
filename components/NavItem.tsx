@@ -4,16 +4,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-interface Props {
+interface NavItemProps {
   url: string;
   label: string;
   iconSrc: string;
 }
 
-export default (props: Props) => {
-  const { url, label, iconSrc } = props;
+const NavItem = ({ url, label, iconSrc }: NavItemProps) => {
   const active = usePathname() === url;
-  console.log(usePathname(), active);
 
   return (
     <li className="w-1/3">
@@ -27,3 +25,5 @@ export default (props: Props) => {
     </li>
   );
 };
+
+export default NavItem;

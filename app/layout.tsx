@@ -3,11 +3,7 @@ import FooterSocials from "../components/FooterSocials";
 import Navigation from "../components/Navigation";
 import "../styles/globals.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <body>
@@ -15,7 +11,7 @@ export default function RootLayout({
           <header id="header" className="">
             <Navigation />
           </header>
-          <main id="main" className="grow flex justify-center mt-12">
+          <main id="main" className="grow flex flex-col items-center mt-12">
             {children}
           </main>
           <footer id="footer" className="mt-12 mb-20">
@@ -26,4 +22,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

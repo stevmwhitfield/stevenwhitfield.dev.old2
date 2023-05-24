@@ -1,8 +1,8 @@
 import NavItem from "./NavItem";
 
-export default () => {
+const Navigation = () => {
   return (
-    <nav className="fixed inset-x-0 bottom-0 w-full h-16 bg-background">
+    <nav className="fixed z-50 inset-x-0 bottom-0 w-full h-16 bg-background border-t border-[#444851]">
       <ul className="flex justify-evenly h-full">
         <NavItem url={"/"} label={"Home"} iconSrc={"/house-dark-theme.png"} />
         <NavItem
@@ -19,3 +19,5 @@ export default () => {
     </nav>
   );
 };
+
+export default Navigation;
