@@ -43,8 +43,16 @@ p {
   display: none;
 }
 
-#main {
-  /* height: calc(100vh - 56px); */
+.link {
+  color: var(--color-blue);
+}
+
+.link:hover {
+  color: var(--color-blue-darker);
+}
+
+.link:active {
+  color: var(--color-blue-darkest);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -18,10 +18,6 @@ const IndexPage = () => {
         />
         {/* Text-heavy section */}
         <section className="w-full max-w-[31rem]">
-          {/* <PageHeader
-            mainHeader={"Steven Whitfield"}
-            subHeader={"Software Engineer"}
-          /> */}
           <header className="mb-8">
             <h1 className="font-bold text-3xl sm:text-4xl">Steven Whitfield</h1>
             <h2 className="text-textSecondary text-xl pt-[0.25em]">
@@ -37,12 +33,18 @@ const IndexPage = () => {
               love to work with you to gain experience and build something
               awesome!
             </p>
-            <Link
-              href={"/projects"}
-              className="text-blue underline hover:text-blueDarker active:text-blueDarkest"
-            >
-              See my projects
-            </Link>
+
+            <p className="">
+              Click{" "}
+              <Link
+                href={"/StevenWhitfield_Resume.pdf"}
+                target="_blank"
+                className="text-blue hover:text-blueDarker active:text-blueDarkest"
+              >
+                here
+              </Link>{" "}
+              to see my resume.
+            </p>
           </article>
         </section>
       </div>

@@ -46,12 +46,34 @@ const ProjectCard = ({
       </div>
       {/* LINKS */}
       <div className="flex space-x-16">
-        <Link href={`${codeUrl}`} target="_blank" className="text-blue">
-          Code
+        <Link
+          href={`${codeUrl}`}
+          target="_blank"
+          className="text-blue flex items-center space-x-2"
+        >
+          <Image
+            src={"/code.svg"}
+            alt={""}
+            width={24}
+            height={24}
+            className=""
+          />
+          <p>Code</p>
         </Link>
         {demoUrl ? (
-          <Link href={`${demoUrl}`} target="_blank" className="text-blue">
-            Demo
+          <Link
+            href={`${demoUrl}`}
+            target="_blank"
+            className="text-blue flex items-center space-x-2"
+          >
+            <Image
+              src={"/start.svg"}
+              alt={""}
+              width={24}
+              height={24}
+              className=""
+            />
+            <p>Demo</p>
           </Link>
         ) : null}
       </div>
