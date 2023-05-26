@@ -1,21 +1,17 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import PageHeader from "../components/PageHeader";
 import Container from "../components/Container";
-import Head from "next/head";
+
+export const metadata: Metadata = {
+  title: "Steven Whitfield - Software Engineer",
+  description:
+    "Steven Whitfield is a software engineer with a focus in full-stack web development.",
+};
 
 const IndexPage = () => {
   return (
     <Container>
-      <Head>
-        <title>Steven Whitfield - Software Engineer</title>
-        <meta name="title" content="Steven Whitfield - Software Engineer" />
-        <meta
-          name="description"
-          content="Steven Whitfield is a software engineer with a focus in full-stack web development."
-        />
-        <link rel="canonical" href="https://www.stevenwhitfield.dev/" />
-      </Head>
       <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:space-x-16">
         {/* Photo of myself - replace with more professional photo once available */}
         <Image
