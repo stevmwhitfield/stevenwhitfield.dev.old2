@@ -7,7 +7,7 @@ const ProjectsPage = () => {
   return (
     <Container>
       <PageHeader mainHeader={"Projects"} />
-      <div className="grid justify-items-center md:grid-cols-2">
+      <div className="grid justify-items-center gap-8 mb-12 md:grid-cols-2 md:w-fit md:gap-16 md:mx-auto">
         {projects.map((project) => {
           const { imagePath, title, tags, description, codeUrl, demoUrl } =
             project;

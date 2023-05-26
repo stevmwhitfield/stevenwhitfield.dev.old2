@@ -12,7 +12,7 @@ const ContactCard = ({ imageSrc, label, url }: ContactCardProps) => {
     <Link
       href={`${url}`}
       target="_blank"
-      className="link flex space-x-2 items-start md:items-center"
+      className="link flex space-x-2 items-start md:items-center md:space-x-4"
     >
       <div className="relative w-8 h-8 md:w-12 md:h-12">
         <Image src={imageSrc} alt={""} fill />

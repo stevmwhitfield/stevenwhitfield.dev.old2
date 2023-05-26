@@ -19,7 +19,7 @@ const ProjectCard = ({
   demoUrl,
 }: ProjectCardProps) => {
   return (
-    <div className="w-64 mb-8 flex flex-col lg:w-96">
+    <div className="w-64  flex flex-col lg:w-96">
       {/* IMAGE PATH */}
       <div className="relative mb-4 w-64 h-36 lg:w-96 lg:h-[216px]">
         <Image src={imagePath} alt={""} fill />

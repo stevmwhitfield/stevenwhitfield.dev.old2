@@ -14,13 +14,21 @@ const NavItem = ({ url, label, iconSrc }: NavItemProps) => {
   const active = usePathname() === url;
 
   return (
-    <li className="w-1/3">
+    <li className="w-1/3 md:w-auto">
       <Link
         href={url}
-        className="text-blue hover:text-blueDarker active:text-blueDarkest flex flex-col justify-center items-center w-full h-full"
+        className="link flex flex-col justify-center items-center w-full h-full"
       >
-        <Image src={iconSrc} alt={""} width={24} height={24} />
-        <p className={active ? "text-xs font-bold" : "text-xs"}>{label}</p>
+        <Image
+          src={iconSrc}
+          alt={""}
+          width={24}
+          height={24}
+          className="md:hidden"
+        />
+        <p className="text-xs md:text-lg">
+          <span className={active ? "font-bold" : ""}>{label}</span>
+        </p>
       </Link>
     </li>
   );
