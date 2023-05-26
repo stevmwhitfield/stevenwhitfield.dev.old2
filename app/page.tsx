@@ -39,18 +39,6 @@ const IndexPage = () => {
               would love to work with you to gain experience and build something
               awesome!
             </p>
-
-            <p className="">
-              See my{" "}
-              <Link
-                href={"/StevenWhitfield_Resume.pdf"}
-                target="_blank"
-                className="text-blue hover:text-blueDarker active:text-blueDarkest"
-              >
-                resume
-              </Link>
-              .
-            </p>
           </article>
         </section>
       </div>
