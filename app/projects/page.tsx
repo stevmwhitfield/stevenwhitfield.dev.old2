@@ -14,12 +14,13 @@ const ProjectsPage = () => {
     <Container>
       <PageHeader mainHeader={"Projects"} />
       <div className="grid justify-items-center gap-8 mb-12 md:grid-cols-2 md:w-fit md:gap-16 md:mx-auto">
-        {projects.map((project) => {
+        {projects.map((project, i) => {
           const { imagePath, title, tags, description, codeUrl, demoUrl } =
             project;
 
           return (
             <ProjectCard
+              key={i}
               imagePath={imagePath}
               title={title}
               tags={tags}
