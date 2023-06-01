@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import Container from "../components/Container";
 
 export const metadata: Metadata = {
@@ -34,8 +33,8 @@ const IndexPage = () => {
             <p className="mb-4">
               Hi, my name is Steven. I graduated from Florida Polytechnic
               University in 2023 with a B.S. in Computer Science and a
-              concentration in game development. That said, my current focus is
-              on <span className="text-green">full stack development</span>. I
+              concentration in game development. My current skillset is on{" "}
+              <span className="text-green">web and game development</span>. I
               would love to work with you to gain experience and build something
               awesome!
             </p>

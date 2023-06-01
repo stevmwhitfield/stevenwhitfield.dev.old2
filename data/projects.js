@@ -17,15 +17,6 @@ const projects = [
     codeUrl: "https://github.com/stevmwhitfield/chawla-media-next",
     demoUrl: "https://chawla-media-next.vercel.app/",
   },
-  {
-    title: "Simple PERN Web App",
-    imagePath: "/PERN-screenshot.png",
-    description:
-      "Web app for quickly starting projects with React, Node.js, Express, and PostgreSQL. Includes basic CRUD operations.",
-    tags: ["React", "Node.js", "Express", "PostgreSQL"],
-    codeUrl: "https://github.com/stevmwhitfield/pern-starter",
-    demoUrl: "",
-  },
 ];
 
 export { projects };
